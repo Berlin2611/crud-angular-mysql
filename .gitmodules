@@ -1,0 +1,3 @@
+[submodule "client/lib/componente-form"]
+	path = client/lib/componente-form
+	url = git@github.com:Berlin2611/componente-form.git

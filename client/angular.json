@@ -26,6 +26,11 @@
                                 "glob": "**/*.js",
                                 "input": "node_modules/my-comp-form",
                                 "output": "./my-comp-form/"
+                            },
+                            {
+                                "glob": "**/*.js",
+                                "input": "lib/componente-form/dist",
+                                "output": "./componente-form/"
                             }
                         ],
                         "styles": [
