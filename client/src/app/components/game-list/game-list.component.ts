@@ -7,22 +7,29 @@ import { GamesService } from '../../services/games.service';
 })
 export class GameListComponent implements OnInit {
 
-  games: any = [];
+  value: string;
+  name: string;
+  mivalor: string;
+  games : any = [];
   constructor(private gamesService: GamesService) { }
 
   ngOnInit(): void {
     this.getGames();
+    this.value = 'click';
+    this.name = 'jli';
+    this.mivalor = 'hola';
   }
-  getGames() {
+  getGames(){
     this.gamesService.getGames()
     .subscribe(
       res => {
         this.games = res;
       },
       err => console.error(err)
-    );
+    )
+    
   }
-  deleteGame(id: string) {
+  deleteGame(id: string){
     this.gamesService.deleteGame(id)
     .subscribe(
       res => {
@@ -30,9 +37,9 @@ export class GameListComponent implements OnInit {
         this.getGames()
       },
       err => console.log(err)
-    );
+    )
   }
-  editGame(id: string) {
+  editGame(id: string){
     console.log(id);
   }
 }

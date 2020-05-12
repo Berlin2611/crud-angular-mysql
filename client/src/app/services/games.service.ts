@@ -9,23 +9,22 @@ export class GamesService {
   API_URI = 'http://localhost:3000/api';
   constructor(private http: HttpClient) { }
 
-  getGames() {
+  getGames(){
     return this.http.get(`${this.API_URI}/games`);
   }
-  getGame(id: string) {
+  getGame(id: string){
     return this.http.get(`${this.API_URI}/games/${id}`);
   }
 
-  updateGame(id: string | number, updatedGame: Game): Observable<Game> {
+  updateGame(id: string | number, updatedGame: Game): Observable<Game>{
     return this.http.put(`${this.API_URI}/games/${id}`, updatedGame);
   }
 
-  deleteGame(id: string) {
+  deleteGame(id: string){
     return this.http.delete(`${this.API_URI}/games/${id}`);
   }
 
-  saveGame(game: Game) {
+  saveGame(game: Game){
     return this.http.post(`${this.API_URI}/games`, game);
   }
-
 }

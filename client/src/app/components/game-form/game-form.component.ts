@@ -2,6 +2,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { Game } from 'src/app/Models/game';
 import { GamesService } from '../../services/games.service';
 import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-game-form',
   templateUrl: './game-form.component.html',
