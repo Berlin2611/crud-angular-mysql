@@ -1,4 +1,4 @@
-## Clonar repositorios
+## Clonar repositorio
 ```sh
 git@github.com:Berlin2611/crud-angular-mysql.git
 ```
