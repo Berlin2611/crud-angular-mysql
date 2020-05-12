@@ -24,6 +24,7 @@
     "form-comp-h": "^1.0.0",
     "my-comp-form": "0.0.1",
     "rxjs": "~6.5.4",
+    "sweetalert2": "^9.10.13",
     "test-form": "^1.0.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
