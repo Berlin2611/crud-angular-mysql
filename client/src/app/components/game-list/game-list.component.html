@@ -1,4 +1,10 @@
-<my-form title="Formulario"></my-form>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <input class="form-control ml-2" type="text" placeholder="Ingresa el titulo" [(ngModel)]="title">
+    </div>
+</div>
+
+<my-form attr.title="{{title}}"></my-form>
 <div class="row">
     <div class="col-md-4" *ngFor="let game of games">
         <div class="card text-center">
@@ -19,4 +25,3 @@
     </div>
 
 </div>
-
