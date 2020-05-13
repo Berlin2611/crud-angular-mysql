@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "webcomponents:ci": "cd lib/componente-form && npm ci",
     "webcomponents:start": "cd lib/componente-form && npm start",
     "webcomponents:build": "cd lib/componente-form && npm run build"
   },
